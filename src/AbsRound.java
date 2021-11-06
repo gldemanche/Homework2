@@ -6,8 +6,8 @@ import java.util.LinkedList;
  */
 public abstract class AbsRound implements IContestant{
 
-    LinkedList<Match> matches = new LinkedList<Match>();
-    LinkedList<IContestant> roundWinners = new LinkedList<IContestant>();
+    LinkedList<Match> matches;
+    LinkedList<IContestant> roundWinners = new LinkedList<>();
 
     public AbsRound(LinkedList<Match> matches){
         this.matches = matches;
