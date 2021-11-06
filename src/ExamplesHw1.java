@@ -1,8 +1,8 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class Examples {
-    public Examples() {}
+public class ExamplesHw1 {
+    public ExamplesHw1() {}
     //lego teams
     LegoRobotTeam wpi = new LegoRobotTeam("WPI", "glizzy", 1);
     LegoRobotTeam rpi = new LegoRobotTeam("RPI", "strap", 5);
