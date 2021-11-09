@@ -16,7 +16,7 @@ public class InitialRound extends AbsRound {
      * @return true if team won
      */
     public boolean isWinner(IContestant myTeam){
-      for(IContestant thisTeam :this.roundWinners){
+      for(IContestant thisTeam :this.getMatchWinners()){
           if(thisTeam.equals(myTeam)){
               return true;
           }

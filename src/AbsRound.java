@@ -4,7 +4,7 @@ import java.util.LinkedList;
  * represent an abstract round
  * @author Gabe_Demanche Chris_Chow
  */
-public abstract class AbsRound implements IContestant{
+public abstract class AbsRound implements IContestant {
 
     LinkedList<Match> matches;
     LinkedList<IContestant> roundWinners = new LinkedList<>();
@@ -28,6 +28,6 @@ public abstract class AbsRound implements IContestant{
      * @return int number of winners in the round
      */
     public int getNumWinners(){
-        return roundWinners.size();
+        return getMatchWinners().size();
     }
 }
