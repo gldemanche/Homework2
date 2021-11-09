@@ -1,5 +1,8 @@
 import java.util.LinkedList;
-
+/**
+ * represent an tournament
+ * @author Gabe_Demanche Chris_Chow
+ */
 public class Tournament {
 
     LinkedList<IWinner> rounds;
@@ -10,6 +13,11 @@ public class Tournament {
         this.rounds = rounds;
     }
 
+    /**
+     * Sees if a team won over half the rounds in a tournament
+     * @param winningTeam the team to check
+     * @return true if team is a valid winner and they won over half the rounds
+     */
     public boolean finalWinnerIsValid(IContestant winningTeam){
         for(IWinner winRound : this.rounds){
             if(winRound.isWinner(winningTeam)){

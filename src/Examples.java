@@ -1,9 +1,11 @@
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 import java.util.LinkedList;
-
+/**
+ * represent hw2 examples
+ * @author Gabe_Demanche Chris_Chow
+ */
 public class Examples {
 
     public Examples() {
