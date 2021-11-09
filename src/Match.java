@@ -1,8 +1,8 @@
 public class Match {
     IContestant team1;
     IContestant team2;
-    IResults game;
-    public Match(IContestant team1, IContestant team2, IResults game){
+    IResult game;
+    public Match(IContestant team1, IContestant team2, IResult game){
       this.team1 = team1;
       this.team2 = team2;
       this.game = game;

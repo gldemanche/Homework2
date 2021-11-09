@@ -90,6 +90,7 @@ public class Examples {
     AdvancedRound aRoundTwoWinner = new AdvancedRound(ubcSoccerMatches, contestantsTwoWinner);
     //same winner round
     AdvancedRound aRoundSameWinner = new AdvancedRound(wpiGirlsSoccerMatches, contestantsSameWinner);
+    LinkedList<IWinner> tournyrounds1 = new LinkedList<IWinner>();
 
 
     @Before
@@ -110,7 +111,8 @@ public class Examples {
         wpiGirlsSoccerMatches.add(soccermatch6);
         contestantsSameWinner.add(wpiGirls);
         contestantsSameWinner.add(wpiGirls);
-
+        //tournament
+        tournyrounds1.add(iRoundOneWinner);
     }
     // Test initial round getMatchWinner
     // empty list
@@ -268,5 +270,25 @@ public class Examples {
     public void isWinnerAdv_isWinner(){
         assertTrue(aRoundTwoWinner.isWinner(ubcBoys));
     }
+
+
+    //Creating tournaments
+    //empty tournament
+    Tournament emptyTourny = new Tournament(new LinkedList<>());
+    //won over half matches
+    Tournament tourny1 = new Tournament(tournyrounds1);
+
+    // Tests finalWinnerIsValid
+    // empty
+    // won over half matches
+    // did not win half matches
+    // multiple won over half
+    // multiple did not win half
+
+    @Test
+    public void emptyTournament(){assertFalse(emptyTourny.finalWinnerIsValid(wpiBoys));}
+    @Test
+    public void tournament_wonOverHalf(){assertTrue(tourny1.finalWinnerIsValid(wpiBoys));}
+
 
 }

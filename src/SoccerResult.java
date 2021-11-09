@@ -1,4 +1,4 @@
-class SoccerResult implements IResults{
+class SoccerResult implements IResult {
     SoccerTeam team1;
     SoccerTeam team2;
     double team1Points;

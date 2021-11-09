@@ -1,4 +1,4 @@
-public class LegoRobotResult implements IResults{
+public class LegoRobotResult implements IResult {
     LegoRobotTeam team1;
     LegoRobotTeam team2;
     double team1points;
